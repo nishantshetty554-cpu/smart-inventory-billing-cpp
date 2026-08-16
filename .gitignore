@@ -1,0 +1,16 @@
+# Build output
+inventory_app
+inventory_app.exe
+a.out
+*.o
+
+# IDE files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Generated bills
+data/bill_*.txt
