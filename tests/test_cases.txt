@@ -1,0 +1,41 @@
+SMART INVENTORY & BILLING SYSTEM - TEST CASES
+
+TC01 Add product with valid data
+Input: ID=201, Name=Pen Drive, Price=600, Quantity=20, Reorder=5
+Expected: Product added successfully.
+
+TC02 Add duplicate product ID
+Input: ID=101
+Expected: Product should not be added.
+
+TC03 Search existing product
+Input: ID=101
+Expected: Keyboard details displayed.
+
+TC04 Search invalid product
+Input: ID=9999
+Expected: Product not found.
+
+TC05 Update product
+Input: ID=101 and valid new values
+Expected: Product information updated.
+
+TC06 Delete product
+Input: ID=105
+Expected: Product deleted.
+
+TC07 Deposit/billing stock validation
+Input: Buy more quantity than available stock.
+Expected: Billing operation rejected.
+
+TC08 Low stock
+Input: Product quantity <= reorder level.
+Expected: Product appears in Low Stock Report.
+
+TC09 Generate bill
+Input: Product 101, quantity 2.
+Expected: Correct subtotal + 18% GST + grand total.
+
+TC10 Restart persistence
+Action: Add a product, close program, restart.
+Expected: Product remains available because data is stored in CSV.
