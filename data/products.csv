@@ -1,0 +1,6 @@
+id,name,price,quantity,reorderLevel
+101,Keyboard,750,20,5
+102,Mouse,450,15,5
+103,USB Cable,200,4,5
+104,Monitor,8500,8,2
+105,Laptop Bag,1200,4,3
